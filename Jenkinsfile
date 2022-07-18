@@ -20,7 +20,7 @@ pipeline {
         
         stage('BUILD'){
             steps {
-                sh 'clean install'
+                sh './mvnw package'
             }
             post {
                 success {
